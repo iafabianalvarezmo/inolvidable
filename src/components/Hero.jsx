@@ -11,7 +11,7 @@ const Hero = () => {
   const handleCTA = (action) => {
     toast({
       title: "🚧 Esta función aún no está implementada",
-      description: "¡Pero no te preocupes! Puedes solicitarla en tu próximo mensaje 🚀",
+      description: "",
     });
   };
 
