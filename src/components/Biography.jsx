@@ -98,7 +98,7 @@ const Biography = () => {
               <img  
                 alt="Banda Melodías del Recuerdo en una presentación íntima"
                 className="w-full h-80 object-cover sepia-filter"
-               src="public/fondo1.jpg" />
+               src="fondo1.jpg" />
               <div className="absolute inset-0 bg-gradient-to-t from-amber-900/50 to-transparent"></div>
             </div>
           </motion.div>
