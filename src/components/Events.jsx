@@ -68,14 +68,14 @@ const Events = () => {
   const handleTickets = (eventTitle) => {
     toast({
       title: "🚧 Venta de entradas aún no implementada",
-      description: "¡Pero no te preocupes! Puedes solicitarla en tu próximo mensaje 🚀",
+      description: "",
     });
   };
 
   const handleEventInquiry = (eventType) => {
     toast({
       title: "🚧 Formulario de consulta aún no implementado",
-      description: "¡Pero no te preocupes! Puedes solicitarlo en tu próximo mensaje 🚀",
+      description: "",
     });
   };
 
