@@ -42,9 +42,9 @@ const VideoComponent = () => {
         onClick={handleVideoClick}
         onPlay={handleVideoPlay}
         onPause={handleVideoPause}
-        poster="public/fondo1.JPG"
+        poster="fondo1.JPG"
       >
-        <source src="public/video4.mp4" type="video/mp4" />
+        <source src="video4.mp4" type="video/mp4" />
       </video>
       
       {showControls && (
