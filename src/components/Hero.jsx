@@ -22,7 +22,7 @@ const Hero = () => {
         <img  
           alt="Banda de música del recuerdo"
           className="w-full h-full object-cover sepia-filter"
-         src="public/fondo.jpg" />
+         src="/public/fondo.jpg" />
         <div className="absolute inset-0 vintage-gradient opacity-80"></div>
       </div>
 
