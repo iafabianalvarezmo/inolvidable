@@ -1,0 +1,146 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --sepia-light: #f4f1e8;
+  --sepia-medium: #e8dcc0;
+  --sepia-dark: #d4c4a0;
+  --vintage-gold: #d4af37;
+  --vintage-bronze: #cd7f32;
+  --warm-brown: #8b4513;
+  --deep-brown: #654321;
+}
+
+body {
+  @apply bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 text-amber-900;
+  font-family: 'Inter', sans-serif;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(205, 127, 50, 0.1) 0%, transparent 50%);
+}
+
+.vintage-pattern {
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 2px,
+      rgba(212, 175, 55, 0.05) 2px,
+      rgba(212, 175, 55, 0.05) 4px
+    );
+}
+
+.sepia-filter {
+  filter: sepia(30%) saturate(1.2) brightness(1.1);
+}
+
+.vintage-shadow {
+  box-shadow: 
+    0 10px 25px rgba(139, 69, 19, 0.15),
+    0 4px 10px rgba(212, 175, 55, 0.1);
+}
+
+.music-note-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.vintage-gradient {
+  background: linear-gradient(135deg, 
+    rgba(212, 175, 55, 0.9) 0%, 
+    rgba(205, 127, 50, 0.8) 50%, 
+    rgba(139, 69, 19, 0.9) 100%);
+}
+
+.glass-effect {
+  background: rgba(244, 241, 232, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.vintage-button {
+  background: linear-gradient(145deg, #d4af37, #cd7f32);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 4px 8px rgba(139, 69, 19, 0.3);
+  transition: all 0.3s ease;
+}
+
+.vintage-button:hover {
+  background: linear-gradient(145deg, #e6c547, #d4af37);
+  transform: translateY(-2px);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    0 6px 12px rgba(139, 69, 19, 0.4);
+}
+
+.vintage-card {
+  background: linear-gradient(145deg, 
+    rgba(244, 241, 232, 0.9), 
+    rgba(232, 220, 192, 0.8));
+  border: 2px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(139, 69, 19, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.decorative-border {
+  border-image: linear-gradient(45deg, #d4af37, #cd7f32, #d4af37) 1;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.text-vintage-gold {
+  color: var(--vintage-gold);
+}
+
+.text-vintage-bronze {
+  color: var(--vintage-bronze);
+}
+
+.bg-vintage-gold {
+  background-color: var(--vintage-gold);
+}
+
+.bg-vintage-bronze {
+  background-color: var(--vintage-bronze);
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.vintage-texture {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(212, 175, 55, 0.15) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.music-wave {
+  animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.5); }
+}
+
+.vintage-input {
+  background: rgba(244, 241, 232, 0.8);
+  border: 2px solid rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+.vintage-input:focus {
+  border-color: var(--vintage-gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+  background: rgba(244, 241, 232, 1);
+}
